@@ -1,0 +1,28 @@
+
+@function heart {
+
+    position:relative;
+    }
+    
+    .heart >.like{
+    position:absolute;
+    font-size: 17px;
+    left:-15px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    }
+    
+    .full{
+    opacity: 0;
+    background: linear-gradient(#FF79DA, #9356DC);
+    cursor: pointer;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition-duration: 0.35s;
+    }
+    
+    .heart:hover .full{
+        opacity:1;
+        transform: scale(1.1);} 

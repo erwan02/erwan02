@@ -1,0 +1,32 @@
+@use "../utils/box-shadow.scss";
+
+.reserver{
+    text-align: center;
+    
+    & h2{
+        
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+    
+    
+    & button{ 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color:white;
+    font-weight:300;
+    font-size:20px;
+    border-radius: 25px;
+    padding: 17px 30px;
+    border:none;
+    background-image: linear-gradient(rgba(147, 86, 220, 0.5),rgba(255,121,218,0.9)) ; 
+    @include box-shadow.base-shadow; 
+  
+}
+    
+    
+    & button:hover{ 
+    cursor: pointer;
+    transition: 250ms;
+    transform:scale(1.05)}
+    }

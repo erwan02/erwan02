@@ -1,0 +1,46 @@
+@use"../utils/box-shadow.scss";
+@use"../utils/effet.scss";
+
+
+.option h2{font-weight: 700;}
+
+.Choisir{
+    & ol { display: flex; 
+    justify-content: space-evenly;
+    gap:17px;
+    @media(max-width: 810px)
+    {flex-direction: column; }  }
+    
+    & ul { 
+    &::before {
+    content:"";
+     }
+    background-color: #f6f6f6;
+    padding : 25px 30px;
+    border-radius: 20px;
+    flex: grow 1;  
+    @include box-shadow.base-shadow;
+    &:hover{ 
+        cursor:pointer;
+        @include effet.effet;
+        background-color: blueviolet;
+    & i.fas{
+    margin-right: 15px;
+    }
+    } 
+& span{ 
+display: flex;
+align-items: center;
+justify-content: center;
+position:absolute;
+transform: translate(-140%, -75%);
+width: 25px;
+height: 25px;
+text-align: center;
+padding: 5px;
+background-color: #9356DC;
+color: #fff;
+border-radius: 50%;
+}}}
+
+
